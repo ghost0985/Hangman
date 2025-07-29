@@ -20,7 +20,7 @@ export function HangmanWord({
         fontFamily: "monospace",
       }}
     >
-      {wordToGuess.split("").map((letter, index) => (
+      {wordToGuess.split("").map((letter: string, index) => (
         <span style={{ borderBottom: ".1em solid black" }} key={index}>
           <span
             style={{
